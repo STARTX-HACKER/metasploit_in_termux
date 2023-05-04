@@ -8,3 +8,4 @@ bundle install
 bundle update
 mkdir $PREFIX/opt
 mv $HOME/metasploit-framework $PREFIX/opt
+clear
