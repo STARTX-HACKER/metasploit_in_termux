@@ -6,7 +6,7 @@ rm $HOME/metasploit-framework/Gemfile.lock
 cd $HOME/metasploit-framework/
 bundle install
 bundle update
-mkdir $PREFIX/opt
+[ -e "$PREFIX/opt" ] || mkdir $PREFIX/opt
 mv $HOME/metasploit-framework $PREFIX/opt
 rm -rf $HOME/metasploit-in-termux
 clear
