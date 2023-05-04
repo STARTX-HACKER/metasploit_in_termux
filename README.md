@@ -14,5 +14,5 @@ git clone https://github.com/STARTX-HACKER/metasploit_in_termux
 
 cd metasploit-in-termux
 
-bash msf_install.sh
+bash metasploit.sh
 ```
