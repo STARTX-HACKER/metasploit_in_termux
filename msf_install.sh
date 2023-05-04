@@ -5,3 +5,7 @@ bash $HOME/metasploit_in_termux/metasploit.sh
 rm $HOME/metasploit-framework/Gemfile.lock
 cd $HOME/metasploit-framework/
 bundle install
+bundle update
+mkdir $PREFIX/opt
+mv $HOME/metasploit-framework $PREFIX/opt
+cd $HOME
