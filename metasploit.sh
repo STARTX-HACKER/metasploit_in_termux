@@ -8,5 +8,5 @@ bundle install
 bundle update
 [ -e "$PREFIX/opt" ] || mkdir $PREFIX/opt
 mv $HOME/metasploit-framework $PREFIX/opt
-rm -rf $HOME/metasploit-in-termux
+rm -rf $HOME/metasploit_in_termux
 clear
