@@ -1,14 +1,13 @@
-cd
 pkg install wget
-wget -P $HOME/ https://github.com/gushmazuko/metasploit_in_termux/raw/master/metasploit.sh
-chmod +x $HOME/metasploit.sh
-bash $HOME/metasploit.sh
-rm $HOME/metasploit-framework/Gemfile.lock
-cd $HOME/metasploit-framework/
+[ -e "$PREFIX/opt" ] || mkdir $PREFIX/opt
+cd $PREFIX/opt
+wget -P $PREFIX/opt/ https://github.com/gushmazuko/metasploit_in_termux/raw/master/metasploit.sh
+chmod +x $PREFIX/opt/metasploit.sh
+bash $PREFIX/opt/metasploit.sh
+rm $PREFIX/opt/metasploit-framework/Gemfile.lock
+cd $PREFIX/opt/metasploit-framework/
 bundle install
 bundle update
-[ -e "$PREFIX/opt" ] || mkdir $PREFIX/opt
-mv $HOME/metasploit-framework $PREFIX/opt
 rm -rf $HOME/metasploit_in_termux
-rm -rf $HOME/metasploit.sh
+rm -rf $PREFIX/opt/metasploit.sh
 clear
