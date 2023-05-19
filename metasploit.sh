@@ -11,4 +11,3 @@ bundle update
 rm -rf $HOME/metasploit_in_termux
 rm -rf $PREFIX/opt/metasploit.sh
 clear
-cd $HOME
