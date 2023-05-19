@@ -1,4 +1,4 @@
-pkg install wget
+apt install wget -y
 [ -e "$PREFIX/opt" ] || mkdir $PREFIX/opt
 cd $PREFIX/opt
 wget -P $PREFIX/opt/ https://github.com/gushmazuko/metasploit_in_termux/raw/master/metasploit.sh
