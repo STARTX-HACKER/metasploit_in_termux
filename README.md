@@ -8,7 +8,7 @@ Install Metasploit Framework 6 in Termux
 ```bash
 apt update -y && apt upgrade -y
 
-pkg install git
+apt install git -y
 
 git clone https://github.com/STARTX-HACKER/metasploit_in_termux
 
