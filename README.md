@@ -14,5 +14,7 @@ git clone https://github.com/STARTX-HACKER/metasploit_in_termux
 
 cd metasploit_in_termux
 
-bash metasploit.sh
+chmod +x metasploit
+
+./metasploit
 ```
